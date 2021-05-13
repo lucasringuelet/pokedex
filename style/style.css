@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-image: url("../images/fondoPokemon.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    display: flex;
+}
+
+.decoration {
+    border-radius: 20px 20px 0 0;
+    height: 140px;
+    width: 100%;
+    background-image: url("../images/decoracion.png");
+    background-size: cover;
+}
+
+.pokedex {
+    background-color: #BE3734;
+    min-width: 280px;
+    max-width: 400px;
+    width: 60vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+    border-radius: 20px;
+    box-shadow: -7px 7px #81221D;
+    padding-bottom: 20px;
+}
+
+.pokemon {
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F2F2D3;
+    border-radius: 10px;
+    box-shadow: 3px -3px #C5C5BE;
+    padding: 20px;
+    height: 120px;
+    width: 120px;
+    align-items: center;
+}
+
+.pokemonborde {
+    padding: 30px;
+    background-color: #DEDEDE;
+    border-radius: 10px;
+    box-shadow: -5px 5px #6A6A72;
+}
+
+#nameImag {
+    text-transform: capitalize;
+}
+
+.description {
+    background-color: #55AB62;
+    height: 40px;
+    width: 180px;
+    border-radius: 5px;
+    box-shadow: 2px -2px #45854f;
+    padding: 10px;
+    text-align: center;
+}
+
+#titulo {
+    color: white;
+    margin: 5px;
+}
+
+.botones {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: baseline;
+}
+
+.tecla {
+    margin: 5px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: -2px 2px #6A6A72;
+}
+
+.icon {
+    height: 25px;
+}

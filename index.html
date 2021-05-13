@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./images/pokeball-pokemon-svgrepo-com.svg">
     <script src="scripts.js"></script>
 
     <title>Pokedex</title>
@@ -13,22 +14,26 @@
 
 <body onload="pedido(0)">
 
-    <h1>POKEDEX</h1>
-    <div>
-        <button id="next" value="-1" onclick="pedido(value)">Anterior</button>
-        <button id="next" value="1" onclick="pedido(value)">Siguiente</button>
+    <div class="container pokedex">
+        <div class="decoration">
 
+        </div>
+        <h1 id="titulo">POKEDEX</h1>
+        <div class="container pokemonborde">
+            <div class="container pokemon">
+                <div id="nameImag">
+                </div>
+            </div>
+        </div>
+        <div class="conteiner botones">
+            <button class="tecla" id="before" value="-1" onclick="pedido(value)"><img class="icon" src="./images/anterior.png" alt="Anterior"></button>
+            <button class="tecla" id="select" value="" onclick="contenidoPokemon(value)">Seleccionar</button>
+            <button class="tecla" id="next" value="1" onclick="pedido(value)"><img class="icon" src="./images/siguiente.png" alt="Siguiente"></button>
+        </div>
+        <div class="conteiner description">
+            <div id="description"></div>
+        </div>
     </div>
-    <div id="nameImag">
-
-
-    </div>
-    <button id="select" value="" onclick="contenidoPokemon(value)">Seleccionar</button>
-
-    <div id="description"></div>
-
-
-
 
 </body>
 
